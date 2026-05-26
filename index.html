@@ -93,6 +93,13 @@ margin-left:auto;
 border-bottom-right-radius:6px;
 }
 
+.message a{
+color:#2158a8;
+font-weight:700;
+text-decoration:underline;
+word-break:break-word;
+}
+
 .typing{
 display:flex;
 gap:5px;
@@ -242,6 +249,13 @@ return str.replace(/[&<>'"]/g, tag => ({
 }[tag]));
 }
 
+function linkify(text){
+return text.replace(
+/(https?:\/\/[^\s]+)/g,
+'<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>'
+);
+}
+
 async function sendMessage(){
 
 const text = input.value.trim();
@@ -277,7 +291,7 @@ const data = await response.json();
 document.getElementById("typing")?.remove();
 
 messages.innerHTML += `
-<div class="message bot">${escapeHTML(data.reply || "Ik kan hier momenteel geen antwoord op geven.")}</div>
+<div class="message bot">${linkify(escapeHTML(data.reply || "Ik kan hier momenteel geen antwoord op geven."))}</div>
 `;
 
 } catch(error){
