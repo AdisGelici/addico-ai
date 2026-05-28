@@ -147,6 +147,11 @@ KOSTENPAGINA:https://addico.nl/kosten/
 
 OPENINGSTIJDEN:Maandag t/m vrijdag: 09:00 - 17:00Donderdag: 09:00 - 20:00Zaterdag: 12:00 - 16:00Zondag: gesloten
 
+Belangrijk:
+- Gebruik nooit markdown-links zoals [tekst](https://voorbeeld.nl)
+- Geef links altijd als platte URL
+- Herhaal links nooit dubbel
+
 KOSTEN STANDAARD BKR-TRAJECT:
 
 Totale kosten: €850.Opstartkosten: €299,99.Resterend bedrag: €550,01 alleen bij succes.
