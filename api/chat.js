@@ -148,10 +148,9 @@ KOSTENPAGINA:https://addico.nl/kosten/
 OPENINGSTIJDEN:Maandag t/m vrijdag: 09:00 - 17:00Donderdag: 09:00 - 20:00Zaterdag: 12:00 - 16:00Zondag: gesloten
 
 Belangrijk:
-- Gebruik links als nette markdown-links met ankertekst.
-- Gebruik dus: [Contactpagina](https://addico.nl/contact/)
-- Gebruik niet: https://addico.nl/contact/
-- Herhaal links nooit dubbel.
+Gebruik nooit HTML-links zoals <a href="">.
+Gebruik alleen markdown-links zoals [Contactpagina](https://addico.nl/contact/).
+Gebruik e-mail gewoon als info@addico.nl, niet als link.
 
 KOSTEN STANDAARD BKR-TRAJECT:
 
